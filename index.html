@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#7f7268",
+              "surface-container-high": "#ebe8e3",
+              "surface-variant": "#e5e2dd",
+              "on-primary-container": "#fffbff",
+              "on-tertiary-fixed-variant": "#4f453b",
+              "on-tertiary-fixed": "#221a12",
+              "outline": "#87736c",
+              "surface-container": "#f0ede8",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1c1c19",
+              "primary-fixed": "#ffdbcf",
+              "on-background": "#1c1c19",
+              "surface-container-highest": "#e5e2dd",
+              "tertiary-fixed-dim": "#d3c4b7",
+              "on-error-container": "#93000a",
+              "secondary-container": "#d6e7d9",
+              "inverse-primary": "#ffb59b",
+              "on-secondary": "#ffffff",
+              "error": "#ba1a1a",
+              "inverse-surface": "#31302d",
+              "background": "#fcf9f4",
+              "secondary-fixed-dim": "#bacbbe",
+              "primary-fixed-dim": "#ffb59b",
+              "primary-container": "#af5f41",
+              "outline-variant": "#dac1b9",
+              "on-secondary-fixed-variant": "#3b4a40",
+              "on-primary-fixed-variant": "#763318",
+              "secondary": "#536257",
+              "surface": "#fcf9f4",
+              "error-container": "#ffdad6",
+              "on-secondary-fixed": "#111e16",
+              "tertiary-fixed": "#f0e0d3",
+              "surface-tint": "#94492d",
+              "primary": "#91472b",
+              "on-tertiary-container": "#fffbff",
+              "on-error": "#ffffff",
+              "surface-container-low": "#f6f3ee",
+              "surface-bright": "#fcf9f4",
+              "secondary-fixed": "#d6e7d9",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#655a50",
+              "on-primary-fixed": "#380d00",
+              "surface-dim": "#dcdad5",
+              "on-surface-variant": "#54433d",
+              "on-secondary-container": "#59685d",
+              "inverse-on-surface": "#f3f0eb"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-md shadow-[0_10px_40px_rgba(84,67,61,0.06)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="font-headline text-2xl font-bold text-[#1c1c19] dark:text-[#fcf9f4]">The Tactile Gallery</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-[#54433d] dark:text-[#dac1b9] hover:text-[#91472b] transition-colors font-body text-base tracking-wide" href="#">Classes</a>
+<a class="text-[#54433d] dark:text-[#dac1b9] hover:text-[#91472b] transition-colors font-body text-base tracking-wide" href="#">Gallery</a>
+<a class="text-[#54433d] dark:text-[#dac1b9] hover:text-[#91472b] transition-colors font-body text-base tracking-wide" href="#">Our Story</a>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3 rounded-full font-label text-sm uppercase tracking-widest hover:opacity-80 transition-opacity duration-300 active:scale-95">Book Now</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-6 z-10">
+<span class="font-label text-xs tracking-[0.2em] uppercase text-primary font-semibold mb-4 block">Hand-Thrown Experiences</span>
+<h1 class="font-headline text-5xl md:text-7xl text-on-surface mb-8 leading-tight">Find your flow <br/><span class="italic text-primary">in the clay.</span></h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md mb-10">Experience the meditative art of pottery in our sun-drenched studio. From raw earth to finished form.</p>
+<div class="flex gap-4">
+<a class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-4 rounded-full font-label text-sm uppercase tracking-widest hover:opacity-90 transition-all shadow-xl" href="#classes">Explore Classes</a>
+</div>
+</div>
+<div class="md:col-span-6 relative">
+<div class="absolute -top-20 -right-20 w-80 h-80 bg-secondary-container/30 rounded-full blur-3xl -z-10"></div>
+<div class="rounded-[2.5rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+<img alt="Hands on pottery wheel" class="w-full aspect-[4/5] object-cover" data-alt="Close up of artisan hands shaping wet clay on wheel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwxpRvEODq4rdMMc2St1NxfRYUtQbQpw-XQ9lO-YDydD21lS5h2ZwpgbPieeB_VqQP732yutvFFQCdiQhwSCGzf-R7xrOqS6Gfv83pCkWOt8xZBCW5MYq6VhO6eMm3Xog48FvdNFp-NxHpviDaXFnZoE89t4oFUC2Vs-InQA-kv_IqXc26r4yQQTVTTRcDiQzOOsE5YOby5r8_UZUK55s5wdmV6yKMwIueP13V_gDoANThjc9fAkaLZIWCMFiRH21xxYZl2GEOVvs"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-6 rounded-2xl shadow-xl max-w-[200px] border border-outline-variant/10">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.9/5</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-snug">"The most calming experience I've had in years." — Sarah L.</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Classes Section -->
+<section class="py-24 bg-surface-container-low" id="classes">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl text-on-surface mb-4">Wheel-Throwing Classes</h2>
+<p class="text-on-surface-variant">Whether you're touching clay for the first time or looking to master complex forms, we have a wheel for you.</p>
+</div>
+<div class="flex gap-2">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:bg-surface transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:bg-surface transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Beginner Wheel -->
+<div class="group bg-surface-container-lowest rounded-[1.5rem] overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col">
+<div class="h-64 overflow-hidden relative">
+<img alt="Beginner pottery" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Small clay bowls and beginner hands learning to center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr6sdUjOD_oLfLSHu53oK7eZi5EpkIiJzIZvxRa0t0WauciWa2K41dIvF_A9WiZiFNavNMNAxN39YYoaei5X-Avb_3MYiMHgLSoOO3fE5xZE8GUEzxf81mx3wV8rnjAPORPQ_U8NAd75D4Tjw_ZUU44En_JLZwDE_9N4VyhhQrfVhK7QYCPeIVEfTF8TDlo2DHXmYFZRvYeFvgGz2otGXeHs1q3WRu7C05xw5K9aiwo1PUZjrq1OL3Nq6-OCkfY0HszrC1kHfgpRc"/>
+<div class="absolute top-4 right-4">
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-4 py-1.5 rounded-full text-[10px] font-label uppercase tracking-widest font-bold">Available</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl text-on-surface">Beginner Wheel</h3>
+<span class="text-primary font-bold text-xl">$85</span>
+</div>
+<p class="text-on-surface-variant mb-8 leading-relaxed text-sm">A 2.5-hour introduction to the basics of centering, pulling, and shaping your first cylinder or bowl.</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-3 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                Includes all materials and firing
+                            </li>
+<li class="flex items-center gap-3 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                Max 6 students per session
+                            </li>
+</ul>
+<button class="w-full py-4 rounded-full border-2 border-primary text-primary font-label text-xs uppercase tracking-widest font-bold hover:bg-primary hover:text-on-primary transition-all active:scale-95">Select Class</button>
+</div>
+</div>
+<!-- Intermediate Form -->
+<div class="group bg-surface-container-lowest rounded-[1.5rem] overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col">
+<div class="h-64 overflow-hidden relative">
+<img alt="Intermediate pottery" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Sophisticated taller ceramic vases with narrow necks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHtGb0txOLQGbwGStQEwhIec3By4sIL1KP1_A-of_aaND-BSYfuQe0t3_pCL6XqIZM0mt7dCF4SHwmI4Xl1M17wCy_kuPjPdx3QRyHqLKY224H8nStGHQAOMD3PicMF0vrrORhJ_X3i_QW5YQ0szFS0fzd49WLx-y0CIrmbcoxZF5lvGaEQwkIrPoou5vPKZiwYCoegYWNXW7ozv6E2UiSihV6qak3pWQVDelhBMQDB6cxCAKZ4UzKE9Q0nHkHBOp07Sh_y6FnAFU"/>
+<div class="absolute top-4 right-4">
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-4 py-1.5 rounded-full text-[10px] font-label uppercase tracking-widest font-bold">Limited Seats</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl text-on-surface">Intermediate Form</h3>
+<span class="text-primary font-bold text-xl">$120</span>
+</div>
+<p class="text-on-surface-variant mb-8 leading-relaxed text-sm">Focus on taller vessels, handles, and advanced glazing techniques for those with previous experience.</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-3 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                Specialized tool kit provided
+                            </li>
+<li class="flex items-center gap-3 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                Focus on complex vessel geometry
+                            </li>
+</ul>
+<button class="w-full py-4 rounded-full border-2 border-primary text-primary font-label text-xs uppercase tracking-widest font-bold hover:bg-primary hover:text-on-primary transition-all active:scale-95">Select Class</button>
+</div>
+</div>
+<!-- Private Sessions -->
+<div class="group bg-surface-container-lowest rounded-[1.5rem] overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col">
+<div class="h-64 overflow-hidden relative">
+<img alt="Private session" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="One on one pottery instruction in a cozy studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy1FX-ZtwrbJyj-3BVHw9SbSeI5h4ctZz7D4lhRl1c4bTjTG1GIC-jWDlUkFp6pEVlTLprzN0zISa8_qxEBeobd5dRVqS1vLsBplIJ8iz4uwGEmhUS5hBe7TS2EkWlfMepUuyP3UIuVgt-2XZeYrcPe65SI7chdUSZXCLeqChl68GTs6zypBtxnNXe4uP8JUqW-OgeSgQ3dtidUGLpfAI701RUrCtUlZ8lMJDD8F-9RXImDAAYHt4CWoSIf62b0GNi1ok6AxNKP9I"/>
+<div class="absolute top-4 right-4">
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-4 py-1.5 rounded-full text-[10px] font-label uppercase tracking-widest font-bold">Personalized</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl text-on-surface">Private Sessions</h3>
+<span class="text-primary font-bold text-xl">$200</span>
+</div>
+<p class="text-on-surface-variant mb-8 leading-relaxed text-sm">One-on-one tailored instruction for individuals or couples seeking a personalized artistic journey.</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-3 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                Flexible scheduling
+                            </li>
+<li class="flex items-center gap-3 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                Choose your specific project focus
+                            </li>
+</ul>
+<button class="w-full py-4 rounded-full border-2 border-primary text-primary font-label text-xs uppercase tracking-widest font-bold hover:bg-primary hover:text-on-primary transition-all active:scale-95">Select Class</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-24 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="font-label text-xs tracking-[0.2em] uppercase text-primary font-semibold mb-4 block">Student Showcase</span>
+<h2 class="font-headline text-4xl text-on-surface">Gallery of Creations</h2>
+</div>
+<!-- Bento Grid Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 h-auto md:h-[800px]">
+<div class="md:col-span-2 md:row-span-2 rounded-[2rem] overflow-hidden group relative">
+<img alt="Ceramic bowls" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Minimalist collection of white and earth toned ceramic bowls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCSdec_DPWnK_JJBa5DwBNH2FvfZWb_R1uLILAtHKcQhh1veen-69z5IE5UcPT5THYpxqJjw0nXGL3rjjtzxTPAGTu2jbAnhQ6ayo4wPL_ov9CE37Pl1CeNvQW73Dal-W1_2uQ3XDsjMfM1wGhvTmKskY0ZU7tA2ombXivvoHJ1-FrRbWmBxQkay16ibyfIteK_S02iTqmOTF9IjeFxKCY9FiPsxbaZud6gI4mthXkbpfzlud7G5Rk0oH6xMtUwpiZJ62E49IC_YY"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<p class="text-white font-label text-xs uppercase tracking-widest">Handmade Minimalist Bowls</p>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-1 rounded-[2rem] overflow-hidden group relative">
+<img alt="Pottery vase" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="A textured beige ceramic vase with dried flowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq9GrcPTzh4uFHLctKw6AkqzcC4KJ6YOmGhmndD88d89S4S0cbBHcO_UUmHJMUacMKE1MoNJBGdZPQNkuFzVoyo6D6C0jWfXUMy-GdWv-ZDte_0Xh-SY6WHXLqkd6vSDeh8m5H7KwWo-MfTC5oPgRSZpgg3PpwOgBDpqR-FNM_8sWaftfXjQBBMCJU-4VPYCaUAfIWpB8VJFfCNKTWdljSSjVM0jQXANIAEneOGOnPq5GXWKkIOTMjgmlnIQn6P5Q_RCwwncINNU8"/>
+</div>
+<div class="md:col-span-1 md:row-span-2 rounded-[2rem] overflow-hidden group relative">
+<img alt="Student project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Assorted student projects on wooden shelves in studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTidyerxW3os_bCgc9l3g60ObGo2nDKesnOqDaRdRUQNyQS2zBXdUnUKoSCFWL00oUzSDLYXNzuJN8cX1vq-Jnc76aOr5dllmbJLjZxYZFI6E4fISVMOv-NwccWSDYf-pC9_z_H8N9NVbbBQi_konsbgQYlHiJ8qVAND2f452UUkbvQPtaLio2Nojsujp--meeD30jAkiUtg-AyVo0Jh3pgmtnkcvb0gpwiJGbEsaCITUPdGA1LgKzCd-oVmz0xa-ku66veG-IfsM"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 rounded-[2rem] overflow-hidden group relative">
+<img alt="Glazed mug" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="A rustic speckled clay mug with a warm brown glaze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAYBS7ZcJhWpM1ykyRj2VUiHQMv9Ss9zEGIHi02L2p9uVO_fbCMvxEsz9X_FS_wWMxV3-6am4YBJqpGw4jHkalORCELAn3redU6Rdl8X3Hf6MiA3Ut2j2dqSx-OIo8Hc6c3RzuRnhO_XKhD9DDJrRy6xoHxe7wiu_eN0pPO-huS2lY6fjhZRiFN8hGTZQIh61pVKLfzW72sAJRL6ZcLak9FIuIDYItMDxWjj1gRc99-5cwtJGtPOAm6UUwXF-V7dJ26s7UC5JLCsE"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Form Section -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-4xl mx-auto px-8">
+<div class="bg-surface-container-lowest rounded-[2.5rem] p-8 md:p-16 shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
+<div class="mb-12 text-center md:text-left">
+<h2 class="font-headline text-3xl text-on-surface mb-4">Complete Your Booking</h2>
+<p class="text-on-surface-variant">Secure your spot at the wheel. We'll send a confirmation with arrival details within 24 hours.</p>
+</div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Class Choice (Pre-selected) -->
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Selected Class</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface appearance-none">
+<option>Beginner Wheel ($85)</option>
+<option>Intermediate Form ($120)</option>
+<option>Private Session ($200)</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<!-- Date/Time Picker -->
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Preferred Date</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface" type="date"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Contact Fields -->
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface" placeholder="Your name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface" placeholder="hello@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Special Requests</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface" placeholder="Any specific goals or dietary requirements for refreshments?" rows="4"></textarea>
+</div>
+<div class="pt-6">
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-5 rounded-full font-label text-sm uppercase tracking-widest font-bold shadow-lg shadow-primary/20 hover:shadow-xl hover:opacity-90 transition-all flex items-center justify-center gap-3" type="submit">
+                            Confirm Booking
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<p class="text-center mt-6 text-[10px] text-on-surface-variant/60 uppercase tracking-widest">By booking, you agree to our 24-hour cancellation policy</p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#f0ede8] dark:bg-[#2a2a26] w-full py-16 px-8 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto text-center md:text-left">
+<div>
+<div class="font-headline text-xl text-[#1c1c19] dark:text-[#fcf9f4] mb-4">The Tactile Gallery</div>
+<p class="text-[#54433d] dark:text-[#dac1b9] font-body text-sm leading-relaxed max-w-xs mx-auto md:mx-0">A space for creation, meditation, and the slow art of ceramics.</p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-[#1c1c19] dark:text-[#fcf9f4] font-label text-sm tracking-widest uppercase mb-2">Visit Us</span>
+<p class="text-[#54433d] dark:text-[#dac1b9] font-body text-sm">Studio Hours: Tue-Sun 10am-6pm</p>
+<p class="text-[#54433d] dark:text-[#dac1b9] font-body text-sm">123 Clay Lane, Artisan District</p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-[#1c1c19] dark:text-[#fcf9f4] font-label text-sm tracking-widest uppercase mb-2">Connect</span>
+<a class="text-[#54433d] dark:text-[#dac1b9] hover:text-[#91472b] transition-colors font-body text-sm" href="#">Instagram</a>
+<a class="text-[#54433d] dark:text-[#dac1b9] hover:text-[#91472b] transition-colors font-body text-sm" href="#">Pinterest</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-outline-variant/20 text-center">
+<p class="text-[#54433d] dark:text-[#dac1b9] font-body text-xs tracking-widest uppercase">© 2024 The Tactile Gallery. Handcrafted in the Studio.</p>
+</div>
+</footer>
+</body></html>
